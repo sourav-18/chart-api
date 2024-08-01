@@ -3,12 +3,12 @@ const conn = require("./mongodb");
 
 const friendRequestSchema = new mongoose.Schema(
   {
-    userId: {
+    senderId: {
       type: mongoose.Types.ObjectId,
       ref: "users",
       required: true,
     },
-    senderId: {
+    receiverId: {
       type: mongoose.Types.ObjectId,
       ref: "users",
       required: true,
